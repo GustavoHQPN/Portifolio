@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+   <html lang="PT-BR">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="style.css">
+
+      <title>Portifólio GH</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header>
+         <a href="" style="text-decoration: none; color: #FFFFFF;"> Gustavo<span style="color:#e69f35"> Henrique</span></a>
+         <nav>
+            <div class="menu">
+               <div class="l1"></div>
+               <div class="l2"></div>
+               <div class="l3"></div>
+            </div>
+            <ul class="nav-list">
+               <li><a href="#section1" class="active">Inicio</a></li>
+               <li><a href="#section2" >Sobre</a></li>
+               <li><a href="#section4" >Projetos</a></li>
+               <li><a href="#section5" >Contato</a></li>
+            </ul>
+         </nav>
+      </header>   
+
+      <!--==================== MAIN ====================-->
+
+         <!--==================== Inicio ====================-->
+         <section id="section1" style="margin-top: 65px;">
+            <h1 id="texto1"> Olá me chamo Gustavo e sou <p>Desenvolvedor <span class="animado" style="color:#e69f35"></span></p></h1>
+            <div id="cxfoto">
+               <img id="foto" src="ft.jpeg" alt="">
+            </div>
+         </section>
+
+         <!--==================== SOBRE ====================-->
+         <section id="section2">
+            <div>
+               <h1 id="texto2">Sou um cara com grande interesse na área de desenvolvimento na qual busco 
+                  sempre estar atualizado das novas tecnologias que diariamente são inseridas e/ou atualizadas, 
+                  Atualmente estou estudando pela udemy e pela Unicesumar, aprimorando minhas habilidades tanto 
+                  no front-end como back-end; Algumas tecnologias que possuo conhecimento são: Java,python, C, 
+                  JavaScript, PHP, MySql, MariaDB, HTML5 e CSS3, tenho como hobbies tocar instrumentos e desafios do tipo 
+                  "puzzle"; </h1>
+               <div id="imagens1">
+                  <img class="foto1" src="piano.png" alt="">
+                  <img class="foto1" src="cubo.png" alt="">
+                  <img class="foto1" src="monitor.png" alt="">
+               </div>
+            </div>
+         </section>
+         
+
+         <!--==================== PROJETOS ====================-->
+         <section id="section4">
+            <div class="imgp">
+               <a href="#"><img src="logov2.png" alt=""><br><br><p>Projeto de site de filmes, séries e muito mais!(Em Manutenção)</p></a>
+           </div>
+           <div class="imgp">
+               <a href="https://gustavohqpn.github.io/TremDoCorte/"><img src="trem.png" alt=""><br><br><p>Projeto Barbearia online!</p></a> 
+           </div>
+           <div class="imgp">
+               <a href="#"><img src="inDev.png" alt=""><br><br><p>Em desenvolvimento</p></a>
+           </div>
+           <div class="imgp">
+               <a href="#"><img src="inDev.png" alt=""><br><br><p>Em desenvolvimento</p></a>
+           </div>
+           <div class="imgp">
+               <a href="#"><img src="inDev.png" alt=""><br><br><p>Em desenvolvimento</p></a>
+           </div>
+           <div class="imgp">
+               <a href="#"><img src="inDev.png" alt=""><br><br><p>Em desenvolvimento</p></a>
+           </div>
+           <div class="imgp">
+               <a href="#"><img src="inDev.png" alt=""><br><br><p>Em desenvolvimento</p></a>
+           </div>
+           <div class="imgp">
+               <a href="#"><img src="inDev.png" alt=""><br><br><p>Em desenvolvimento</p></a>
+           </div>
+         </section>
+
+         <!--==================== CONTATOS ====================-->
+         <section id="section5">
+            <div id="form">
+               <h1>Converse comigo!</h1><br><br>
+               <form class="form" 
+               action="https://api.staticforms.xyz/submit" 
+               method="post" 
+               >
+                  <input type="hidden" name="accessKey" value="2f903931-c1fb-49d9-8475-1ce046ac2ee8">
+                  <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
+
+                  <label for="name">Nome</label>
+                  <input type="text" name="nome" required>
+
+                  <label for="email">Email</label>
+                  <input type="email" name="email" required>
+
+                  <label for="message">Mensagem</label>
+                  <textarea name="message"></textarea>
+
+                  <input type="hidden" name="_captcha" value="false">
+
+                  <button type="submit">Enviar</button>
+               </form>   
+            </div>   
+         </section>
+      <!--==================== Botão de subir ao topo ====================-->
+
+      <button id="backToTopBtn" onclick="scrollToTop()">⬆</button>      
+      <!--==================== Rodapé ====================-->
+      <footer >
+         <div id="footer">
+            <br>
+            <p>&copy; 2023 Feito por Gustavo Henrique de Paula Nascimento</p>
+            <p>Email: gustavohqpn@gmail.com</p>
+            <p>Telefone: (31) 9 9814-2189</p>
+            <a href="https://www.linkedin.com/in/gustavo-henrique-b9146325b/">Linkedin /</a> 
+            <a href="https://github.com/GustavoHQPN">github</a>
+         </div>
+   </footer>
+   <!--=============== LETTER ANIMATION ===============-->
+      <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+      <script src="scripts.js" defer></script>
+</body>
+</html>

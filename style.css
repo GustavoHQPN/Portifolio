@@ -1,0 +1,454 @@
+/*=============== FONTES ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIAVEIS CSS ===============*/
+:root {
+  --title-color: #f1f2f3;
+  --text-color: #d0d1d8;
+  --body-color: #2b281d;
+  --body-color2:#494433;
+  --container-color: #292413c5;
+
+
+}
+/*=============== ANIMAÇÕES ===============*/
+@keyframes rise-right {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes rise-left {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  background-color: var(--container-color);
+}
+/*=============== SCROLLBAR ===============*/
+
+body::-webkit-scrollbar {
+  width: 12px;               /* largura scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #312d2d;        /* cor da área de fora */
+  border-radius: 5px; 
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e69f356e;    /* cor do botão */
+  border-radius: 5px;       /* radius do botão */
+  border: 3px solid #503d24ab;  /* padding botão */
+}
+
+/*=============== NAV HEADER ===============*/
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+}
+.nav-list{
+  list-style: none;
+  display: flex;
+}
+.nav-list li a{
+letter-spacing: 3px;
+margin-left: 32px;
+font-size: 16px;
+}
+.menu{
+  display: none;
+  cursor: pointer;
+}
+.menu div{
+  width: 32px;
+  height: 2px;
+  background: #FFFFFF ;
+  margin: 8px;
+  transition: 0.3s;
+}
+header a {
+  font-size: 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--container-color);
+  backdrop-filter: blur(20px);
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+nav a{
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 35px;
+    
+
+}
+
+nav a:hover, 
+nav a.active{
+    color: #e69f35;
+    transition: 0.2s;
+}
+#opcoes {
+    display: inline;
+}
+/*==================== INICIO ====================*/
+section{
+  display: flex;
+  min-height: 100vh;
+  max-height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  background: var(--body-color);
+}
+section:nth-child(odd){
+  background: var(--body-color2);;
+}
+#foto{
+  padding: 0;
+  box-shadow: 0px 0px 50px #000000;
+  border-radius: 100%;
+  width: 300px;
+  height: auto;
+  animation-duration: 2s;
+  animation-name: rise-right;
+  animation-timing-function: ease-in-out;
+}
+#texto1{
+  animation-duration: 2s;
+  animation-name: rise-left;
+  width: 400px;
+  animation-timing-function: ease-in-out;
+  text-align: center;
+}
+/*==================== BOTÃO UP ====================*/
+#backToTopBtn {
+  display: none; /* Inicialmente escondido */
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  height: 60px;
+  width: 60px;
+  background: #d8ad6c;
+  color: #fff;
+  border: none;
+  border-radius: 40%;
+  cursor: pointer;
+  animation-duration: 0.5s;
+  animation-name: rise-right;
+  animation-timing-function: ease-in-out;
+}
+
+#backToTopBtn:hover {
+  background-color: #6d5633;
+}
+/*==================== SOBRE ====================*/
+
+#texto2{
+  font-size: 20px;
+  animation-duration: 2s;
+  animation-name: rise-left;
+  width: 100%;
+  animation-timing-function: ease-in-out;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+#section2{
+  display: flex;
+  padding: 0px 100px;
+}
+div #imagens1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  animation-duration: 2s;
+  animation-name: rise-right;
+  animation-timing-function: ease-in-out;
+} 
+
+.foto1{
+  background-color: #e69f35;
+  box-shadow: 0px 0px 50px #49310c;
+  width: 25%;
+  height: 25%;
+  border-radius: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/*==================== PROJETOS  ====================*/
+#section4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px 50px;
+  justify-content: center;
+  max-height: 400vh;
+  text-align: center;
+}
+#section4 div a {
+  color: #e69f35;
+  text-decoration: none;
+}
+#section4 div {
+  background: #1d1c192f;
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s, border 0.3s;
+}
+.imgp img {
+  width: 60%;
+  border-radius: 15px;
+}
+.imgp p {
+  margin-top: 10px;
+}
+.imgp:hover {
+  transform: scale(1.05);
+  border: #2c1d07 5px solid;
+}
+
+/*==================== FORMULARIO  ====================*/
+#section5{
+  display: flex;
+  flex-direction: column;
+}
+#form h1{
+  text-align: center;
+  margin-bottom: -20%;
+}
+
+#form{
+  flex-direction: column;
+  padding: 2%;  
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #1d1c19;
+  border-color: #ffce84;
+  box-shadow: 0 0 0 5px #725f42 ;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+#form form{
+  display: flex;
+  gap: 20px;
+  min-height: 50vh;
+  min-width: 40vh;
+  flex-direction: column;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.form label,
+.form input,
+.form textarea,
+.form button{
+  display: block;
+  width: 100%;
+
+}
+.form input,
+.form textarea{
+    font: inherit;
+    padding: 1px;
+    padding-left: 5px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: #665c4d;
+}
+.form input:focus,
+.form input:hover,
+.form textarea:focus,
+.form textarea:hover{
+    outline: none;
+    border-color: #ffce84;
+    box-shadow: 0 0 0 1px #ebb76b ;
+}
+.form textarea{
+  min-height: 105px;
+  resize: none;
+}
+.form button{
+  display: block;
+  padding: 1rem;
+  background-color: #e69f35;
+  color: var(--text-color);
+  font: inherit;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  
+}
+.form button:focus,
+.form button:hover{
+  outline: none;
+  background-color: #d8ad6c;
+  transition: transform 0.5s;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px #6e5d43;
+}
+
+/*------SCROOLBAR TEXTAREA------*/
+.form textarea::-webkit-scrollbar {
+  width: 8px;               /* largura scrollbar */
+}
+
+.form textarea::-webkit-scrollbar-track{
+  background: #312d2d;        /* cor da área de fora */
+  border-radius: 5px; 
+}
+
+.form textarea::-webkit-scrollbar-thumb{
+  background-color: #e69f356e;    /* cor do botão */
+  border-radius: 5px;       /* radius do botão */
+}
+
+
+/*==================== FOOTER ====================*/
+#footer{
+  text-align: center;
+  background-color: #0f0f0f;
+  padding-bottom: 30px;
+}
+#footer a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+#footer a:hover{
+  text-decoration: underline;
+  font-style: italic;
+  color: #858692;
+}
+/*==================== RESPONSIVIDADE ====================*/
+@media screen and (max-width:1000px){
+  #texto3 .t1{
+    font-size: 22px;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .nav-list{
+    position: absolute;
+    top: 11.6vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: var(--container-color);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li a{
+    margin-left: 0px;
+  }
+  .nav-list.active{
+    transform: translateX(0);
+  }
+  .menu{
+    display: block;
+  }
+  .menu.active .l1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  .menu.active .l2{
+    opacity: 0;
+  }
+  .menu.active .l3{
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+}
+@media screen and (max-width:800px){
+  #section1{
+    display: flex;
+    flex-direction: column;
+  }
+  #texto3 .t1{
+    font-size: 15px;
+  }
+  #foto{
+    width: 200px;
+  }
+}
+@media screen and (max-width:650px){
+  #texto3 .t1{
+    font-size: 12px;
+  }
+  #section2{
+    padding: 0 10%;
+  }
+  #texto2{
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width:560px){
+  #texto3 .t1{
+    font-size: 10px;
+  }
+  #texto2{
+    font-size: 3vw;
+  }
+}
+@media (max-width: 1024px) {
+  #section4 {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 20px;
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+  #section4 {
+      grid-template-columns: 1fr;
+      padding: 20px;
+  }
+}
