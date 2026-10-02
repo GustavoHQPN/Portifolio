@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gustavo Henrique | Desenvolvedor</title>
+  <meta name="description" content="Portfólio de Gustavo Henrique, desenvolvedor em formação com foco em front-end e back-end. Veja projetos e entre em contato.">
+  <meta name="theme-color" content="#1c1812">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo__in">
+      <a class="marca" href="#inicio" aria-label="Gustavo Henrique, início">
+        <span class="marca__gh">GH</span>
+        <span class="marca__nome">Gustavo Henrique</span>
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="menu-btn__txt">Menu</span>
+        <span class="menu-btn__barras" aria-hidden="true"></span>
+      </button>
+      <nav id="menu" class="nav" aria-label="Principal">
+        <a href="#inicio" class="is-active">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section id="inicio" class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__texto">
+          <p class="hero__ola">Olá, eu sou o Gustavo.</p>
+          <h1>Desenvolvedor <span class="digita" id="digita" aria-live="off">Front-End</span></h1>
+          <p class="hero__lead">Estudo desenvolvimento na Unicesumar e na Udemy e crio projetos para praticar front-end e back-end. Confira o que já construí.</p>
+          <div class="hero__acoes">
+            <a class="btn btn--cheio" href="#projetos">Ver projetos</a>
+            <a class="btn btn--vazio" href="#contato">Falar comigo</a>
+          </div>
+        </div>
+        <figure class="hero__foto">
+          <img src="img/gustavo.jpg" width="720" height="960" alt="Retrato de Gustavo Henrique usando óculos, em um ambiente com janelas ao fundo.">
+        </figure>
+      </div>
+    </section>
+
+    <section id="sobre" class="bloco">
+      <div class="wrap duas">
+        <h2>Sobre mim</h2>
+        <div>
+          <p class="sobre__texto">Tenho grande interesse pela área de desenvolvimento e busco acompanhar as tecnologias que surgem e são atualizadas todos os dias. Hoje estudo pela Udemy e pela Unicesumar, aprimorando minhas habilidades tanto no front-end quanto no back-end.</p>
+          <dl class="stack">
+            <div><dt>Linguagens</dt><dd><ul><li>Java</li><li>C</li><li>JavaScript</li><li>PHP</li></ul></dd></div>
+            <div><dt>Front-end</dt><dd><ul><li>HTML5</li><li>CSS3</li><li>React</li></ul></dd></div>
+            <div><dt>Back-end e dados</dt><dd><ul><li>Node.js</li><li>MySQL</li><li>MariaDB</li></ul></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="bloco bloco--alt">
+      <div class="wrap">
+        <h2>Projetos</h2>
+        <p class="bloco__intro">Projetos pessoais publicados no GitHub Pages. Clique em um card para abrir.</p>
+        <ul class="cards">
+          <li class="card" style="--tile:#000">
+            <img class="card__ico" src="img/trem.png" width="64" height="64" alt="" loading="lazy">
+            <h3>Trem do Corte</h3>
+            <p>Site de barbearia online.</p>
+            <a class="card__link" href="https://gustavohqpn.github.io/TremDoCorte/" target="_blank" rel="noopener">Abrir projeto<span class="sr"> Trem do Corte (abre em nova aba)</span></a>
+          </li>
+  
+          <li class="card" style="--tile:#ece5d6">
+            <img class="card__ico" src="img/cientifica.png" width="64" height="64" alt="" loading="lazy">
+            <h3>Calculadora científica</h3>
+            <p>Calculadora com algumas funções científicas.</p>
+            <a class="card__link" href="https://gustavohqpn.github.io/Calculadora/" target="_blank" rel="noopener">Abrir projeto<span class="sr"> Calculadora científica (abre em nova aba)</span></a>
+          </li>
+          <li class="card card--pausa" style="--tile:#ece5d6">
+            <img class="card__ico" src="img/filmes.png" width="64" height="64" alt="" loading="lazy">
+            <h3>Site de filmes e séries</h3>
+            <p>Catálogo de filmes, séries e muito mais.</p>
+            <span class="card__status">Em manutenção</span>
+          </li>
+          <li class="card card--mais">
+            <h3>Mais projetos a caminho</h3>
+            <p>Estou desenvolvendo novos projetos. Acompanhe pelo GitHub.</p>
+            <a class="card__link" href="https://github.com/GustavoHQPN" target="_blank" rel="noopener">Ver o GitHub<span class="sr"> (abre em nova aba)</span></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contato" class="bloco">
+      <div class="wrap duas">
+        <div>
+          <h2>Vamos conversar</h2>
+          <p class="bloco__intro">Tem uma vaga, um projeto ou só quer trocar uma ideia? Envie uma mensagem ou use um dos canais abaixo.</p>
+          <ul class="canais">
+            <li><span>E-mail</span><a href="mailto:gustavohqpn@gmail.com">gustavohqpn@gmail.com</a></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/gustavo-henrique-b9146325b/" target="_blank" rel="noopener">gustavo-henrique</a></li>
+            <li><span>GitHub</span><a href="https://github.com/GustavoHQPN" target="_blank" rel="noopener">GustavoHQPN</a></li>
+          </ul>
+        </div>
+        <form class="form" action="https://api.staticforms.xyz/submit" method="post">
+          <input type="hidden" name="accessKey" value="2f903931-c1fb-49d9-8475-1ce046ac2ee8">
+          <input type="hidden" name="subject" value="Contato pelo portfólio">
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" name="name" autocomplete="name" required>
+          </div>
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="campo">
+            <label for="msg">Mensagem</label>
+            <textarea id="msg" name="message" rows="5" required></textarea>
+          </div>
+          <button class="btn btn--cheio" type="submit">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="wrap">
+      <p>&copy; <span id="ano">2025</span> Gustavo Henrique de Paula Nascimento</p>
+    </div>
+  </footer>
+
+  <button id="topo" class="topo-btn" type="button" aria-label="Voltar ao topo">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
